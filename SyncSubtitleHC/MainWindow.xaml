@@ -1,0 +1,19 @@
+﻿<Window x:Class="SyncSubtitleHC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SyncSubtitleHC"
+        mc:Ignorable="d"
+        Title="SyncSubtitle" Height="200" Width="700" AllowDrop="True" Drop="EventDropFile">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+
+            <ListBox x:Name="fileList" Width="700" Height="100"></ListBox>
+
+        </StackPanel>
+        <TextBox x:Name="syncTime" HorizontalAlignment="Left" Height="23" Margin="60,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Sync : " HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Width="51" Height="28"/>
+        <Button Content="Excute" HorizontalAlignment="Left" Margin="241,120,0,0" VerticalAlignment="Top" Width="122" Height="23" Click="Button_Click_Excute"/>
+    </Grid>
+</Window>
